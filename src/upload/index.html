@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script src="index.js"></script>
+        <h1>Upload a document!</h1>
+        <div>
+            <form onsubmit="">
+                <label for="docname">Name de la documenta</label><br>
+                <input type="text" id="docname" name="docname"><br>
+                <label for="grade">Jahrgangsstufe</label>
+                <input type="range" min="5" max="12" oninput="rangeValue.innerText = this.value">
+                <a id="rangeValue">12</a><br>
+                <label for="halbjahr">halbjahr eingeben</label><br>
+                <input type="radio" name="halbjahr" id="halb1">
+                <label for="halbjahr">1</label>
+                <input type="radio" name="halbjahr" id="halb2">
+                <label for="halbjahr">2</label><br>
+                <label for="subject">Input the subject</label><br>
+                <select name="subject" id="subject">
+                    <option value="deutsch">Deutsch</option>
+                    <option value="englisch">Englisch</option>
+                    <option value="mathe">Mathe</option>
+                    <option value="physik">Physik</option>
+                </select><br>
+
+                <label for="tags">Write some Tags, separated by blankspaces<br>U. A.: Lehrer, Fach, Thema</label><br>
+                <input type="text" id="tags" name="tags"><br>
+                <label for="upload">Upload your file</label>
+                <input type="file" id="file" name="file" multiple>
+            </form>
+        </div>
+    </body>
+</html>
