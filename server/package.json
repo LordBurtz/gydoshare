@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "this is the backend server for gydoshare",
+    "main": "main.js",
+    "scripts": {
+        "dev": "nodemon main.js",
+        "start": "node main.js"
+    },
+    "author": "LordBurtz",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.20",
+        "sqlite3": "^5.1.2",
+        "validator": "^13.7.0",
+        "express-fileupload": "^1.4.0"
+    }
+}

@@ -3,7 +3,7 @@
         <script src="index.js"></script>
         <h1>Upload a document!</h1>
         <div>
-            <form onsubmit="">
+            <form onsubmit="" enctype="multipart/form-data" action="http://localhost:3000/upload" method="POST">
                 <label for="docname">Name de la documenta</label><br>
                 <input type="text" id="docname" name="docname"><br>
                 <label for="grade">Jahrgangsstufe</label>
@@ -25,7 +25,8 @@
                 <label for="tags">Write some Tags, separated by blankspaces<br>U. A.: Lehrer, Fach, Thema</label><br>
                 <input type="text" id="tags" name="tags"><br>
                 <label for="upload">Upload your file</label>
-                <input type="file" id="file" name="file" multiple>
+                <input type="file" id="file" name="file" multiple><br>
+                <input type="submit" id="submit-btn" name="submit-btn">
             </form>
         </div>
     </body>
