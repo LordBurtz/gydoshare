@@ -54,6 +54,9 @@ Thumbs.db
 *.tar
 *.zip
 
+#ignore dtabase
+*.db
+
 # ignore private/secret files
 *.der
 *.key
